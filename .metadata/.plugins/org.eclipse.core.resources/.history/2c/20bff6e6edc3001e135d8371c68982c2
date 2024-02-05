@@ -1,0 +1,27 @@
+package com.vivek;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.vivek.Entity.Employee;
+
+import in.vivek.Repo.EmpRepo;
+
+@SpringBootApplication
+public class SpringBootCrudRepoApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext run = SpringApplication.run(SpringBootCrudRepoApplication.class, args);
+		EmpRepo bean = run.getBean(EmpRepo.class);
+		Employee emp  = new Employee();
+		emp.setEmpId(1);
+		emp.setEmpName("Vivek");
+		emp.setEmpPost("developer");
+		emp.setEmpSalary(20000.00);
+		bean.save(emp);
+		System.out.println("Data Insert!!!");
+		
+	}
+
+}

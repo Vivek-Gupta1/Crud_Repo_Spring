@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;in.vivek.Repo&apos; to &apos;com.vivek.Repo&apos;&#x0D;&#x0A;- Original project: &apos;Spring_Boot_Crud_Repo&apos;&#x0D;&#x0A;- Original element: &apos;Spring_Boot_Crud_Repo/src/main/java/in.vivek.Repo&apos;&#x0D;&#x0A;- Renamed element: &apos;Spring_Boot_Crud_Repo/src/main/java/com.vivek.Repo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;in.vivek.Repo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.vivek.Repo" name="com.vivek.Repo" qualified="false" references="true" stamp="1707113714705" textual="false" version="1.0"/>
+</session>

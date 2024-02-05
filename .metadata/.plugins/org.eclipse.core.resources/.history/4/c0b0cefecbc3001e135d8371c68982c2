@@ -1,0 +1,16 @@
+package com.vivek.Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Entity
+@Data
+@Table(name="Emp_Details")
+public class Employee {
+
+	private int empId;
+	private String empName;
+	private double empSalary;
+	private String empPost;
+}

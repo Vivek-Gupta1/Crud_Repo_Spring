@@ -1,0 +1,5 @@
+package in.vivek.Repo;
+
+public interface EmpRepo {
+
+}
