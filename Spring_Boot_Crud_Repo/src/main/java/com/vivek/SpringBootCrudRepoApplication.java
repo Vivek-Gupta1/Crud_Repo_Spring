@@ -1,6 +1,7 @@
 package com.vivek;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.boot.SpringApplication;
@@ -17,6 +18,25 @@ public class SpringBootCrudRepoApplication {
 		ConfigurableApplicationContext run = SpringApplication.run(SpringBootCrudRepoApplication.class, args);
 		EmpRepo bean = run.getBean(EmpRepo.class);
 		
+		List<Employee> equal = bean.findByEmpSalaryGreaterThan(20000.00);
+		for(Employee sal:equal) {
+			System.out.println("Geater::"+sal);}
+		
+		List<Employee> list = bean.findByEmpSalaryLessThan(30000.00);
+		for(Employee sal:list) {
+			System.out.println("Less"+sal);
+		}
+		List<Employee> name = bean.findByEmpName("vivek");
+		for(Employee emp :name) {
+			System.out.println("Names::"+emp);
+			
+		}
+		List<Employee> post = bean.findByEmpPost("developer");
+		for(Employee em:post) {
+			System.out.println("Posts::"+em);
+		}
+		
+//		
 //		Employee emp  = new Employee();
 //		emp.setEmpId(2);
 //		emp.setEmpName("Pandu");
@@ -25,11 +45,11 @@ public class SpringBootCrudRepoApplication {
 //		bean.save(emp);
 //		
 //		Employee emp1  = new Employee();
-//		emp1.setEmpId(3);
-//		emp1.setEmpName("Neeraj");
-//		emp1.setEmpPost("Tester");
-//		emp1.setEmpSalary(25000.00);
-//		bean.save(emp);
+//		emp1.setEmpId(4);
+//		emp1.setEmpName("raju");
+//		emp1.setEmpPost("ManualTester");
+//		emp1.setEmpSalary(15000.00);
+//		bean.save(emp1);
 //		bean.saveAll(Arrays.asList(emp,emp1));
 //		System.out.println("Data Insert!!!");
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -67,4 +87,5 @@ public class SpringBootCrudRepoApplication {
 //		System.out.println("Record Not Found");
 //	}
 
+}
 }

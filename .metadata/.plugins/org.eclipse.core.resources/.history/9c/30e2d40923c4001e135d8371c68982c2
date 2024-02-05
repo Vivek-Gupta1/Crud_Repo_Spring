@@ -1,0 +1,18 @@
+package com.vivek.Repo;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.vivek.Entity.Employee;
+
+public interface EmpRepo extends CrudRepository<Employee, Integer>{
+	
+//	select * from Employee where empSalary>:sal
+public List<Employee>findByEmpSalaryGreaterThan(double sal);
+
+
+List<Employee>findByEmpSalaryLessThan(double sal);
+
+
+}
