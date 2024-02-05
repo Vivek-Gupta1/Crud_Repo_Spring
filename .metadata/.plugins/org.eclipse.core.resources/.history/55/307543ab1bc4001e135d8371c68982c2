@@ -59,12 +59,12 @@ public class SpringBootCrudRepoApplication {
 //		delete(Entity)
 //		deleteAll(Itrable entity)
 //		DeleteAll
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++		
+		
 		 
-//		if(bean.existsById(3)) {
-//			bean.deleteById(3);
-//		}else
-//		System.out.println("Record Not Found");
-//	}
+		if(bean.existsById(3)) {
+			bean.deleteById(3);
+		}else
+		System.out.println("Record Not Found");
+	}
 
 }

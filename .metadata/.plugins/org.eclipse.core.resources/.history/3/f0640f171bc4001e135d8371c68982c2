@@ -50,21 +50,11 @@ public class SpringBootCrudRepoApplication {
 //		for(Employee status:id) {
 //			System.out.println(status);
 //	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//		Iterable<Employee> all = bean.findAll();
-//		for(Employee emp:all) {
-//			System.out.println(emp);
+		Iterable<Employee> all = bean.findAll();
+		for(Employee emp:all) {
+			System.out.println(emp);
+		}
 //		}
-     //deleteById();
-//		deleteAllById
-//		delete(Entity)
-//		deleteAll(Itrable entity)
-//		DeleteAll
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++		
-		 
-//		if(bean.existsById(3)) {
-//			bean.deleteById(3);
-//		}else
-//		System.out.println("Record Not Found");
-//	}
+	}
 
 }
